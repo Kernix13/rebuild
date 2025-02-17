@@ -1,5 +1,7 @@
 # README
 
+> This file should actually be renamed to Notes.md, or have everything in here copied into a new files called Notes.md
+
 - HTMLImageElement: [fetchPriority property](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority)
 - illustrations as webp instead of svg!!!
 - look at freelance/index.html
@@ -246,5 +248,3 @@ wpsiteplan.com
   </li>
 </ul>
 ```
-
-> Twenty25, username = Twenty25, PW = Twenty25
