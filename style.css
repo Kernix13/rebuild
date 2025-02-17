@@ -1,0 +1,146 @@
+/* 3. Resets */
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* This is inherited but you could use it on specific selectors: */
+  interpolate-size: allow-keywords;
+}
+
+body {
+  /* font-family, font-size, and color */
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+}
+
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ol[role=list],
+ul[role=list] {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* Color also */
+  font-stretch: 100%;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* 4. Global styles */
+body {
+  /* font-family, font-size, and color */
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333333;
+  line-height: 1.4;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+h2, h3 {
+  padding-bottom: 0.75rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  color: blue;
+  text-align: center;
+}
+
+p {
+  padding-bottom: 0.25rem;
+}
+
+/* Classes */
+.container {
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto 3em;
+}
+.wrapper {
+  max-width: 900px;
+  width: 60%;
+  margin: 0 auto 3em;
+}
+
+.row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.row-wireframe {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.row.graphics ul {
+  margin-top: 0;
+}
+.row.graphics h3 {
+  padding-bottom: 0;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.card > p {
+  margin-bottom: 0.5rem;
+}
+
+.sections {
+  padding-inline-start: 1em;
+}
+
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+  font-weight: 600;
+}
